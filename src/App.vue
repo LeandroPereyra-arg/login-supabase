@@ -98,6 +98,31 @@ button:disabled {
   cursor: not-allowed;
 }
 
+button.secundario {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+button.secundario:hover:not(:disabled) {
+  background: #cbd5e1;
+}
+
+.boton-enlace {
+  display: block;
+  margin-bottom: 12px;
+  padding: 11px;
+  border-radius: 8px;
+  background: #10b981;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.boton-enlace:hover {
+  background: #059669;
+}
+
 .mensaje {
   margin: 16px 0 0;
   padding: 10px 12px;

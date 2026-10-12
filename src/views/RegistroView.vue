@@ -30,6 +30,9 @@ async function registrarUsuario() {
     const { error } = await supabase.auth.signUp({
       email: correo.value,
       password: contrasena.value,
+      options: {
+        emailRedirectTo: `${window.location.origin}/login`,
+      },
     })
 
     if (error) {

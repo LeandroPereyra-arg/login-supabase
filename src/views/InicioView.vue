@@ -51,7 +51,9 @@ async function cerrarSesion() {
         <strong>{{ correoUsuario }}</strong>
       </div>
 
-      <button type="button" :disabled="cerrandoSesion" @click="cerrarSesion">
+      <RouterLink to="/productos" class="boton-enlace">Administrar productos</RouterLink>
+
+      <button type="button" class="secundario" :disabled="cerrandoSesion" @click="cerrarSesion">
         {{ cerrandoSesion ? 'Cerrando...' : 'Cerrar sesión' }}
       </button>
     </section>
